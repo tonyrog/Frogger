@@ -35,7 +35,7 @@ public class HighScoreScene {
         scoresBox.setAlignment(Pos.CENTER);
         
         // Tillbaka-knapp
-        Button backButton = new Button("Tillbaka till menyn");
+        Button backButton = new Button("Back to menu");
         backButton.setPrefWidth(200);
         backButton.setPrefHeight(40);
         backButton.setFont(Font.font(16));
