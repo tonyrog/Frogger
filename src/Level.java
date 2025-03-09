@@ -32,6 +32,9 @@ public abstract class Level {
         // Skapa specifika banelement
         createLevelElements();
     }
+
+    public void setPlayerReference(Frog player) {
+    }
     
     /**
      * Skapar bakgrunden för banan

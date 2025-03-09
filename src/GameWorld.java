@@ -88,10 +88,8 @@ public class GameWorld {
         // Återställ spelarens position
         player.reset(root.getPrefWidth() / 2, root.getPrefHeight() - 60);
         
-        // Om det är en RiverLevel, sätt spelarreferensen
-        if (currentLevel instanceof RiverLevel) {
-            ((RiverLevel) currentLevel).setPlayerReference(player);
-        }
+        // sätt spelarreferensen
+	currentLevel.setPlayerReference(player);
     }
     
     public void startGame() {

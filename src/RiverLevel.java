@@ -44,6 +44,7 @@ public class RiverLevel extends Level {
     /**
      * Sätter spelarreferensen för ormarna
      */
+    @Override
     public void setPlayerReference(Frog player) {
         
         // Uppdatera alla ormar med spelarreferensen
