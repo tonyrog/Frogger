@@ -44,8 +44,8 @@ public class GameWorld {
         player = new Frog(width / 2, height - 60);
         
         // Skapa banor
-        levels.add(new RoadLevel(width, height));
-        levels.add(new RiverLevel(width, height));
+        levels.add(new RoadLevel(root, width, height));
+        levels.add(new RiverLevel(root, width, height));
         
         // Starta med första banan
         loadLevel(0);

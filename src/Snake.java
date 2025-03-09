@@ -25,6 +25,7 @@ public class Snake extends Enemy {
     /**
      * Sätter spelaren som måltavla för ormen
      */
+    @Override
     public void setTarget(Frog target) {
         this.target = target;
     }

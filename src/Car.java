@@ -1,3 +1,6 @@
+import javafx.scene.Node;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
@@ -18,8 +21,16 @@ public class Car extends Enemy {
         speed = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED);
         
         // Skapa grafisk representation
-        Rectangle rect = new Rectangle(SIZE, SIZE, movingRight ? Color.RED : Color.DARKRED);
-        node = rect;
+	if (movingRight) {
+	    Image image = new Image("images/blue.png",2*SIZE,SIZE,false,true);
+	    ImageView imv = new ImageView();
+	    imv.setImage(image);
+	    node = imv;
+	}
+	else {
+	    Rectangle rect = new Rectangle(SIZE, SIZE, Color.DARKRED);
+	    node = rect;
+	}
         updateNodePosition();
     }
     
